@@ -1,9 +1,16 @@
 import "./App.css";
+import { Navbar, Welcome, Services, Transactions, Footer } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-xl font-bold underline">Hello World</h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   );
 }
